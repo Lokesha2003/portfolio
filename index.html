@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>Lokesha Perera — Software Engineering, DevOps &amp; Cloud</title>
+    <meta
+      name="description"
+      content="Lokesha Perera is an Information Technology undergraduate at SLIIT and a Technology Operations intern at Virtusa, building full-stack and mobile applications with a focus on DevOps, cloud and automation."
+    />
+    <meta name="author" content="Lokesha Perera" />
+    <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#05060c" />
+
+    <!-- Open Graph / social sharing. Once deployed, make og:image and og:url absolute URLs. -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Lokesha Perera" />
+    <meta property="og:title" content="Lokesha Perera — Software Engineering, DevOps & Cloud" />
+    <meta
+      property="og:description"
+      content="IT undergraduate at SLIIT and Technology Operations intern at Virtusa. Full-stack and mobile development, with a focus on DevOps, cloud and automation."
+    />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Lokesha Perera — Building Digital Experiences" />
+    <meta property="profile:first_name" content="Lokesha" />
+    <meta property="profile:last_name" content="Perera" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lokesha Perera — Software Engineering, DevOps & Cloud" />
+    <meta
+      name="twitter:description"
+      content="IT undergraduate at SLIIT and Technology Operations intern at Virtusa, focused on DevOps, cloud and full-stack development."
+    />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="/images/lokesha-perera.webp" type="image/webp" fetchpriority="high" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    />
+
+    <!-- Apply the saved theme before first paint to avoid a flash. Dark is the default. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark') t = 'dark';
+          document.documentElement.setAttribute('data-theme', t);
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'light' ? '#f5f6fa' : '#05060c');
+        } catch (e) {}
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lokesha Perera",
+        "jobTitle": "Information Technology Undergraduate",
+        "description": "IT undergraduate at SLIIT and Technology Operations intern at Virtusa, interested in DevOps, cloud computing and full-stack development.",
+        "email": "mailto:lokeshajeewaniperera@gmail.com",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Sri Lanka Institute of Information Technology"
+        },
+        "worksFor": { "@type": "Organization", "name": "Virtusa (Pvt) Ltd" },
+        "knowsAbout": ["Software Engineering", "DevOps", "Cloud Computing", "Full-Stack Development", "IT Operations"],
+        "sameAs": ["https://github.com/Lokesha2003"]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui, sans-serif; color: #f3f5fa; background: #05060c">
+        <h1>Lokesha Perera</h1>
+        <p>Information Technology Undergraduate · Aspiring Software Engineer · TechOps &amp; DevOps Enthusiast</p>
+        <p>
+          This site needs JavaScript. You can reach me at
+          <a style="color: #7aa2ff" href="mailto:lokeshajeewaniperera@gmail.com">lokeshajeewaniperera@gmail.com</a>
+          or on <a style="color: #7aa2ff" href="https://github.com/Lokesha2003">GitHub</a>.
+        </p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
